@@ -55,6 +55,7 @@ import { useState } from "react";
 import ChangeName from "./components/ChangeName.tsx";
 import PizzaTool from "./components/PizzaTool.tsx";
 import Cart from "./components/Cart.tsx";
+import ExpandableText from "./ExpandableText.tsx";
 
 function App() {
   // const [cartItems, setCartItems] = useState(["Product1", "Product2"]);
@@ -131,7 +132,9 @@ function App() {
       <br />
       <PizzaTool newTopping={"Cheddar "} addTopping={addTopping} />
       <br />
-        <Cart cartItems={cart.items} addQuantity={addQuantity} productId={1}/>
+      <Cart cartItems={cart.items} addQuantity={addQuantity} productId={1} />
+      <br />
+      <ExpandableText revChars={10}>lorem100lorem100lorem100lorem100lorem100lorem100lorem100lorem100lorem100</ExpandableText>
     </>
   );
 }
