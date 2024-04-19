@@ -39,7 +39,7 @@ function App() {
         message={"A aparut Alerta"}
         alertMessage={alertMessage}
         children={<h1>Press Me</h1>}
-        secondMessage={"Mesajul alertei"}
+        secondMessage={"Mesajul  alertei"}
       />
     </div>
   );
